@@ -58,9 +58,40 @@
         <div class="row align-items-center">
           <div class="col-md-10">
             <span class="d-block mb-3 caption" data-aos="fade-up" data-aos-delay="100">White Lake, Michigan</span>
-            <h1 class="d-block mb-4" data-aos="fade-up" data-aos-delay="200">HackIAW</h1>
-            <span class="d-block mb-5 caption" data-aos="fade-up" data-aos-delay="300">March 28th, 2020</span>
-            <a href="signup.html" class="btn-custom" data-aos="fade-up" data-aos-delay="400"><span>Sign Up (Free)</span></a>
+            <h1 class="d-block mb-4" data-aos="fade-up" data-aos-delay="150">HackIAW</h1>
+            <span class="d-block mb-5 caption" data-aos="fade-up" data-aos-delay="200">March 28th, 2020</span>
+            <a href="signup.html" class="btn-custom" data-aos="fade-up" data-aos-delay="250"><span>Sign Up (Free)</span></a>
+            <br><span style="padding:2px 10px; margin-top:15px;border-radius:5px; background-color: white; color: #232531;" class="d-inline-block caption" data-aos="fade-up" data-aos-delay="300">Sign up within <div style="display: inline; color:red" id="countdowntimer">x days</div> for a <i style="color:red">FREE</i> t-shirt!</span>
+            <script>
+              // Set the date we're counting down to
+              var countDownDate = new Date("Jan 26, 2020").getTime();
+              
+              // Update the count down every 1 second
+              var x = setInterval(function() {
+              
+                // Get today's date and time
+                var now = new Date().getTime();
+              
+                // Find the distance between now and the count down date
+                var distance = countDownDate - now;
+              
+                // Time calculations for days, hours, minutes and seconds
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+              
+                // Display the result in the element with id="demo"
+                document.getElementById("countdowntimer").innerHTML = days + "d " + hours + "h "
+                + minutes + "m " + seconds + "s ";
+              
+                // If the count down is finished, write some text
+                if (distance < 0) {
+                  clearInterval(x);
+                  document.getElementById("countdowntimer").innerHTML = "EXPIRED";
+                }
+              }, 1000);
+            </script>
           </div>
         </div>
       </div>
@@ -80,26 +111,26 @@
           </div>
         </div>
 
-        <h3 class="col-md-4" data-aos="fade-up" data-aos-delay="150"><b>FAQs</b></h3>
+        <h3 class="col-md-4" data-aos="fade-up" data-aos-delay="50"><b>FAQs</b></h3>
         <br><div class="row">
           
-          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200"><span class="text-primary">Do I have to know how to code?</span></div>
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="250"><p class="mb-5">NO! HackIAW is open to any high school student, even if you don't know what HTML is! Workshops on coding basics will be run throughout the day.</p></div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="50"><span class="text-primary">Do I have to know how to code?</span></div>
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="75"><p class="mb-5">NO! HackIAW is open to any high school student, even if you don't know what HTML is! Workshops on coding basics will be run throughout the day.</p></div>
           
-          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300"><span class="text-primary">Do I have to come with a team?</span></div>
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="350"> <p class="mb-5">No, while you can work alone if you really want, teams will be formed at the event.</p></div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="50"><span class="text-primary">Do I have to come with a team?</span></div>
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="75"> <p class="mb-5">No, while you can work alone if you really want, teams will be formed at the event.</p></div>
           
-          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300"><span class="text-primary">Who is allowed to come?</span></div>
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="350"> <p class="mb-5">Any high school student who can get to the event! If you're unsure about transportation, tell us when you sign up and we can help you look for a carpool.</p></div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="50"><span class="text-primary">Who is allowed to come?</span></div>
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="75"> <p class="mb-5">Any high school student who can get to the event! If you're unsure about transportation, tell us when you sign up and we can help you look for a carpool.</p></div>
           
-          <div class="col-md-4" data-aos="fade-up" data-aos-delay="400"><span class="text-primary">How much does it cost?</span></div>
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="450"> <p class="mb-5">HackIAW is completely free! Additionally, free food, stickers, and t-shirts will be given out at the event.</p></div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="50"><span class="text-primary">How much does it cost?</span></div>
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="75"> <p class="mb-5">HackIAW is completely free! Additionally, free food, stickers, and t-shirts will be given out at the event.</p></div>
           
-          <div class="col-md-4" data-aos="fade-up" data-aos-delay="400"><span class="text-primary">What will we be doing?</span></div>
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="450"> <p class="mb-5">With your team, you will make a project of your design. The theme of HackIAW is <i>Outer Space</i>, but you're free to make anything you want.</p></div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="50"><span class="text-primary">What will we be doing?</span></div>
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="75"> <p class="mb-5">With your team, you will make a project of your design. The theme of HackIAW is <i>Outer Space</i>, but you're free to make anything you want.</p></div>
           
-          <div class="col-md-4" data-aos="fade-up" data-aos-delay="500"><span class="text-primary">How do I sign up?</span></div>
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="550"> <p class="mb-5">Click <a href="signup.html">here</a></p></div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="50"><span class="text-primary">How do I sign up?</span></div>
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="75"> <p class="mb-5">Click <a href="signup.html">here</a></p></div>
         
         </div>
 
@@ -218,7 +249,7 @@
 
         <div class="row align-items-stretch program">
 
-          <div class="col-12 border-top border-bottom py-5" data-aos="fade" data-aos-delay="150">
+          <div class="col-12 border-top border-bottom py-5" data-aos="fade" data-aos-delay="50">
             <div class="row align-items-stretch">
               <div style="text-align: center;" class="col-md-3 text-white mb-3 mb-md-0"><img src="images/EthanDeGuireProfPic.png" alt="Image" class="img-fluid profpic"> </div>
               <div class="col-md-9">
@@ -232,7 +263,7 @@
             </div>
           </div>
 
-          <div class="col-12 border-bottom py-5" data-aos="fade" data-aos-delay="200">
+          <div class="col-12 border-bottom py-5" data-aos="fade" data-aos-delay="50">
             <div class="row align-items-stretch">
               <div style="text-align: center;" class="col-md-3 text-white mb-3 mb-md-0"><img src="images/grace.png" alt="Image" class="img-fluid profpic"> </div>
               <div class="col-md-9">
@@ -244,7 +275,7 @@
             </div>
           </div>
 
-          <div class="col-12 border-bottom py-5" data-aos="fade" data-aos-delay="250">
+          <div class="col-12 border-bottom py-5" data-aos="fade" data-aos-delay="50">
             <div class="row align-items-stretch">
               <div style="text-align: center;" class="col-md-3 text-white mb-3 mb-md-0"><img src="images/mat.png" alt="Image" class="img-fluid profpic"> </div>
               <div class="col-md-9">
@@ -256,7 +287,7 @@
             </div>
           </div>
 
-          <div class="col-12 border-bottom py-5" data-aos="fade" data-aos-delay="300">
+          <div class="col-12 border-bottom py-5" data-aos="fade" data-aos-delay="50">
             <div class="row align-items-stretch">
               <div style="text-align: center;" class="col-md-3 text-white mb-3 mb-md-0"><img src="images/ayden.png" alt="Image" class="img-fluid profpic"> </div>
               <div class="col-md-9">
@@ -268,7 +299,7 @@
             </div>
           </div>
 
-          <div class="col-12 border-bottom py-5" data-aos="fade" data-aos-delay="250">
+          <div class="col-12 border-bottom py-5" data-aos="fade" data-aos-delay="50">
             <div class="row align-items-stretch">
               <div style="text-align: center;" class="col-md-3 text-white mb-3 mb-md-0"><img src="images/bella.png" alt="Image" class="img-fluid profpic"> </div>
               <div class="col-md-9">
@@ -280,19 +311,19 @@
             </div>
           </div>
 
-          <div class="col-12 border-bottom py-5" data-aos="fade" data-aos-delay="250">
+          <div class="col-12 border-bottom py-5" data-aos="fade" data-aos-delay="50">
             <div class="row align-items-stretch">
               <div style="text-align: center;" class="col-md-3 text-white mb-3 mb-md-0"><img src="images/brenden.png" alt="Image" class="img-fluid profpic"> </div>
               <div class="col-md-9">
                 <h1 class="text-white">Brenden Londeau</h1>
                 <h2 class=>Head of Fundraising</h2>
-                <p class="text-white"></p>
+                <p class="text-white">Brenden is an IA senior who likes to play guitar, race and build cars, and design things with CAD. He is also on his fourth year on the HOT 67 FRC team, and has done mechanical build and design for three of those years (I was a freshman programmer though!) Also avocado toast is not a valid breakfast option, Grace.</p>
                 <a target="_blank" href="https://www.instagram.com/blondeau702" class="p-2"><span class="icon-instagram"></span></a>
               </div>
             </div>
           </div>
           
-          <div class="col-12 border-bottom py-5" data-aos="fade" data-aos-delay="250">
+          <div class="col-12 border-bottom py-5" data-aos="fade" data-aos-delay="50">
             <div class="row align-items-stretch">
               <div style="text-align: center;" class="col-md-3 text-white mb-3 mb-md-0"><img src="images/gavin.png" alt="Image" class="img-fluid profpic"> </div>
               <div class="col-md-9">
