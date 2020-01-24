@@ -1423,3 +1423,32 @@ h1, h2, h3, .h2, .h3, .h4 {
   color: #232531 !important;
   vertical-align: middle !important;
 }
+
+.bigsponsor {
+  width:100%;
+  margin-top: 15px;
+}
+
+.mediumsponsor{
+  display: inline-block;
+  position: relative;
+  max-width: 48%;
+  padding: 0.5rem 0.25rem !important;
+}
+
+
+.sponsor{
+  display: inline-block;
+  position: relative;
+  max-width: 32%;
+  padding: 0.5rem 0.25rem !important;
+}
+
+  margin-top:100px;
+}
+
+.sponsorrow{
+  text-align: center;
+}
+
+/* row mb-5 */
