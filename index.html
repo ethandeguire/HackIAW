@@ -101,7 +101,10 @@
             </span>
 
             <script>
-              var countDownDate = new Date("Feb 29, 2020")
+              var countDownDate = new Date();
+              countDownDate.setHours(23,59,59,999);
+              var ms = countDownDate.getTime() + (86400000 * 3);
+              var countDownDate = new Date(ms);
 
               var x = setInterval(function() {
                 var now = new Date().getTime();
